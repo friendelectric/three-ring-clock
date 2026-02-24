@@ -163,7 +163,8 @@ function draw() {
   text(ts + ' // min size: ' + minSize + 'px   max size: ' + maxSize + 'px   orbit: ' + orbit + 'px   ring ratio: ' + ringRatio.toFixed(2), cx, dimension - 26);
 }
 
-
+// Padding hour(), minute(), and second() values so they always take up 2 characters rather than 1-2
+// e.g., 9am -> 9 -> 09
 function pad(n) {
   return String(n).padStart(2, '0');
 }
